@@ -1,0 +1,108 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Home | Dr Emmanuel Lihanda{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+    <div class="container about-hero-content">
+
+        <div class="about-image">
+            <img src="{% static 'images/IMG-20250510-WA0215.jpg' %}" alt="Dr Emmanuel Lihanda">
+        </div>
+
+        <div class="about-text">
+            <h1>About Dr Emmanuel Lihanda</h1>
+            <p>
+                I believe healthcare should be patient-centered, evidence-based, and deeply humane.
+                My approach combines clinical excellence with empathy, ensuring that every patient
+                is treated not just as a case, but as a person with unique needs and values.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- HEALTHCARE SYSTEMS -->
+<section class="systems-section container">
+    <h2>Healthcare Systems I Work Within</h2>
+
+    <div class="systems-grid">
+        <div class="system-card">Primary Healthcare</div>
+        <div class="system-card">Secondary & Referral Care</div>
+        <div class="system-card">Public Health Systems</div>
+        <div class="system-card">Digital & Health Information Systems</div>
+    </div>
+</section>
+
+<!-- EDUCATION / EXPERIENCE / CERTIFICATIONS -->
+<section class="info-section container">
+    <div class="info-cards">
+
+        <div class="info-card">
+            <h3>Education</h3>
+            <ul>
+                <li>Bachelor of Pharmacy – Kenya Methodist University</li>
+                <li>Clinical & Community Pharmacy Training</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>Experience</h3>
+            <ul>
+                <li>Hospital & Community Pharmacy Practice</li>
+                <li>Patient Counseling & Medication Safety</li>
+                <li>Public Health & Medical Outreach</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>Certifications</h3>
+            <ul>
+                <li>Pharmacovigilance & ADR Reporting</li>
+                <li>Clinical Pharmacy Practice</li>
+                <li>Health Systems & Leadership Training</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="values-section">
+    <div class="container">
+        <h2>My Core Values as a Medic</h2>
+
+        <div class="values-grid">
+
+            <div class="value-card">
+                <h4>Compassion</h4>
+                <p>Every patient deserves dignity, respect, and understanding.</p>
+            </div>
+
+            <div class="value-card">
+                <h4>Integrity</h4>
+                <p>Ethical practice and honesty guide every medical decision.</p>
+            </div>
+
+            <div class="value-card">
+                <h4>Excellence</h4>
+                <p>Continuous learning ensures the highest standard of care.</p>
+            </div>
+
+            <div class="value-card">
+                <h4>Patient Safety</h4>
+                <p>Safe, rational, and evidence-based use of medicines.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

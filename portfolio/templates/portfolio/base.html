@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %}Dr Emmanuel Lihanda{% endblock %}</title>
+
+   
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+   
+    <header>
+        <nav>
+            
+            <a href="{% url 'about' %}">About</a>
+            
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>© {{ year|default:"2026" }} Dr Emmanuel Lihanda</p>
+    </footer>
+
+</body>
+</html>

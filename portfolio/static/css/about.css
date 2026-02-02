@@ -1,0 +1,156 @@
+/* ===============================
+   GLOBAL HELPERS
+================================ */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-top: 4rem;
+}
+
+/* ===============================
+   ABOUT HERO SECTION
+================================ */
+.about-hero {
+    background: linear-gradient(135deg, #eef2ff, #f8f9fb);
+    padding: 4rem 0;
+}
+
+.about-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-image img {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.about-text h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+/* ===============================
+   HEALTHCARE SYSTEMS
+================================ */
+.systems-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.systems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.system-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.system-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ===============================
+   INFO CARDS (Education / Experience / Certs)
+================================ */
+.info-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    flex: 1;
+    min-width: 280px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+    margin-bottom: 1rem;
+    color: #2563eb;
+}
+
+.info-card ul {
+    padding-left: 1.2rem;
+}
+
+.info-card li {
+    margin-bottom: 0.6rem;
+    color: #374151;
+}
+
+/* ===============================
+   CORE VALUES
+================================ */
+.values-section {
+    background: #111827;
+    padding: 4rem 0;
+    margin-top: 5rem;
+}
+
+.values-section h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: #1f2937;
+    padding: 2rem;
+    border-radius: 18px;
+}
+
+.value-card h4 {
+    margin-bottom: 0.5rem;
+    color: #60a5fa;
+}
+
+.value-card p {
+    color: #d1d5db;
+    font-size: 0.95rem;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+    .about-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 260px;
+    }
+}
