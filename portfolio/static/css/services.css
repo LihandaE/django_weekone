@@ -1,0 +1,116 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fb;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HERO */
+.services-hero {
+    padding: 4rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, #e0e7ff, #f8f9fb);
+}
+
+.services-hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: .8rem;
+}
+
+.services-hero p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* SECTIONS */
+.services-section {
+    margin-top: 4rem;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+/* SERVICE CARD */
+.service-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+    margin-bottom: .7rem;
+    color: #2563eb;
+}
+
+.service-card p {
+    font-size: .95rem;
+    color: #555;
+}
+
+/* PUBLIC HEALTH VARIANT */
+.service-card.public h3 {
+    color: #059669;
+}
+
+/* CTA */
+.services-cta {
+    margin-top: 5rem;
+    padding: 4rem 0;
+    text-align: center;
+    background: #111827;
+    color: #fff;
+}
+
+.services-cta h2 {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+}
+
+.services-cta p {
+    margin-bottom: 1.5rem;
+    color: #d1d5db;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: .9rem 2rem;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background .3s ease;
+}
+
+.cta-btn:hover {
+    background: #1d4ed8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .services-hero h1 {
+        font-size: 2.2rem;
+    }
+}

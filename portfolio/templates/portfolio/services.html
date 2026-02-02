@@ -1,0 +1,113 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Services | Dr Emmanuel Lihanda{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- SERVICES HERO -->
+<section class="services-hero">
+    <div class="container">
+        <h1>Medical & Public Health Services</h1>
+        <p>
+            Delivering evidence-based clinical care while advancing community and public health outcomes.
+        </p>
+    </div>
+</section>
+
+<!-- CLINICAL SERVICES -->
+<section class="services-section container">
+    <h2>Clinical Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Patient Consultation</h3>
+            <p>
+                Comprehensive patient evaluation, medication review, and therapeutic guidance
+                tailored to individual health needs.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Medication Therapy Management</h3>
+            <p>
+                Optimizing medication use to improve outcomes, reduce adverse effects,
+                and enhance adherence.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Pharmacovigilance & ADR Reporting</h3>
+            <p>
+                Detection, documentation, and reporting of adverse drug reactions
+                to ensure patient safety.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Clinical Pharmacy Support</h3>
+            <p>
+                Collaboration with healthcare teams to support rational drug use
+                and evidence-based prescribing.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PUBLIC HEALTH SERVICES -->
+<section class="services-section container">
+    <h2>Public Health Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card public">
+            <h3>Health Education & Awareness</h3>
+            <p>
+                Community education on disease prevention, medication safety,
+                and healthy lifestyle practices.
+            </p>
+        </div>
+
+        <div class="service-card public">
+            <h3>Community Outreach Programs</h3>
+            <p>
+                Participation in medical camps and outreach initiatives
+                to expand access to healthcare services.
+            </p>
+        </div>
+
+        <div class="service-card public">
+            <h3>Public Health Research</h3>
+            <p>
+                Research and data-driven interventions aimed at improving
+                population health outcomes.
+            </p>
+        </div>
+
+        <div class="service-card public">
+            <h3>Health Systems Strengthening</h3>
+            <p>
+                Supporting digital health, medication supply systems,
+                and healthcare policy implementation.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="services-cta">
+    <div class="container">
+        <h2>Need Professional Medical Support?</h2>
+        <p>Book an appointment or reach out for public health collaboration.</p>
+        <a href="{% url 'about' %}" class="cta-btn">Get in Touch</a>
+    </div>
+</section>
+
+{% endblock %}
