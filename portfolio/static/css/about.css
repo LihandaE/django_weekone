@@ -1,6 +1,3 @@
-/* ===============================
-   GLOBAL HELPERS
-================================ */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -11,9 +8,7 @@ section {
     margin-top: 4rem;
 }
 
-/* ===============================
-   ABOUT HERO SECTION
-================================ */
+/* ABOUT HERO SECTION */
 .about-hero {
     background: linear-gradient(135deg, #eef2ff, #f8f9fb);
     padding: 4rem 0;
@@ -43,12 +38,10 @@ section {
     color: #4b5563;
 }
 
-/* ===============================
-   HEALTHCARE SYSTEMS
-================================ */
+/* HEALTHCARE SYSTEMS*/
 .systems-section h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
     color: #1f2937;
 }
 
@@ -72,9 +65,7 @@ section {
     transform: translateY(-6px);
 }
 
-/* ===============================
-   INFO CARDS (Education / Experience / Certs)
-================================ */
+/* INFO CARDS (Education / Experience / Certs) */
 .info-cards {
     display: flex;
     gap: 2rem;
@@ -104,9 +95,7 @@ section {
     color: #374151;
 }
 
-/* ===============================
-   CORE VALUES
-================================ */
+/* CORE VALUES*/
 .values-section {
     background: #111827;
     padding: 4rem 0;
@@ -141,9 +130,7 @@ section {
     font-size: 0.95rem;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
+/* RESPONSIVE */
 @media (max-width: 900px) {
     .about-hero-content {
         flex-direction: column;
