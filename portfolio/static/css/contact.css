@@ -1,0 +1,145 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fb;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HERO */
+.contact-hero {
+    padding: 4rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, #eef2ff, #f8f9fb);
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: .6rem;
+}
+
+.contact-hero p {
+    color: #555;
+}
+
+/* MAIN GRID */
+.contact-main {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* APPOINTMENT CARD */
+.appointment-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.appointment-card h2 {
+    margin-bottom: 1.5rem;
+    color: #2563eb;
+}
+
+.appointment-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.appointment-card input,
+.appointment-card textarea {
+    padding: .9rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: .95rem;
+}
+
+.appointment-card textarea {
+    resize: none;
+    height: 120px;
+}
+
+.appointment-card button {
+    margin-top: .8rem;
+    padding: .9rem;
+    border-radius: 50px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.appointment-card button:hover {
+    background: #1d4ed8;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-info h2 {
+    margin-bottom: 1.2rem;
+    color: #111827;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 1rem;
+}
+
+.info-item span {
+    font-size: 1.3rem;
+}
+
+.contact-info h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #2563eb;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    padding: .6rem 1.2rem;
+    border-radius: 30px;
+    background: #eef2ff;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.social-links a:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .contact-main {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.1rem;
+    }
+}

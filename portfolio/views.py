@@ -7,3 +7,5 @@ def home(request):
     return render(request, 'portfolio/home.html')
 def services(request):
     return render(request, 'portfolio/services.html')
+def contact(request):
+    return render(request, 'portfolio/contact.html')
